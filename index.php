@@ -24,7 +24,7 @@ function out($path){
         }else{
             $url = './src/'.$v;//  获取本地文件
             $size = round(filesize($url)/1024,3);
-            echo '<li name ='.$size.'><a href="http://180.76.187.91/src/'.$v.'">'.$v.'</a><span>Size='.$size.'</span></li>';
+            echo '<li name ='.$size.'><a href="http://180.76.187.91/src/'.$v.'">'.$v.'</a><span>Size：'.$size.'KB</span></li>';
                              
         }
     };
@@ -36,7 +36,6 @@ out("./src");
         <button>从小到大</button><button>从大到小</button><button>取消排序</button><button>文件名从小到大</button><button>文件名从大到小</button>
     </div>
 
-    <p>Copyright © 2020 KJ All Rights Reserved</p>
     <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
     <script>
         var color = ['#DAA520' , '#DB7093' , '#cccc33' , '#4682B4' , '#999933' , '#9999cc' , '#663333' , '#6666cc' , '#FF6A6A' , '#009966'];
